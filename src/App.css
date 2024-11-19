@@ -37,3 +37,7 @@
 .content-adjustment{
         min-height: calc(100vh - 403px - 72px);
 }
+
+.about-parent-custom{
+  padding-top: 80px;
+}

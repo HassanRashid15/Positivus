@@ -35,7 +35,7 @@ const Content = () => {
       <Navbar />
       <div className="content-adjustment">
         <Routes>
-          <Route path="/about" element={<About />} />
+          <Route path="/" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           {/* You can add more routes here as needed */}
         </Routes>

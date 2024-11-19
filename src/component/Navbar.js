@@ -16,7 +16,7 @@ const Navbar = () => {
 
         {/* Links */}
         <div className="flex-grow flex justify-center hidden md:flex space-x-4 black">
-          <Link to="about">About us</Link>
+          <Link to="/">About us</Link>
           <Link to="/services">Services</Link>
           <Link to="/usecase">Use Cases</Link>
           <Link to="/pricing">Pricing</Link>
