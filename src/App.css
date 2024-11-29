@@ -1,4 +1,23 @@
-/* component/Preloader.css */
+:root {
+  --color-text: navy;
+  --color-bg: papayawhip;
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+  --green:#b9ff66;
+  --gray :#f3f3f3;
+  --darkblue:#191a23;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: papayawhip;
+    --color-bg: navy;
+    --color-bg-accent: #2626a0;
+  }
+}
 .preloader {
   position: fixed;
   top: 0;
@@ -42,11 +61,84 @@
   padding-top: 80px;
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
+
+
+
+.slick-slider-container {
+  width: 100%;
+  max-width: 90.5%;
+  margin: 30px auto;
+}
+.services_parent_custom {
+  width: 100%;
+  max-width: 90.5%;
+  margin: 30px auto;
+}
+.services-content-custom{
+  gap: 30px;
+}
+@media (min-width:1370px){
+  .slick-slider-container{
+      max-width: 93.5%;
   }
-  100% {
-    transform: translateX(-100%);
+    .services_parent_custom{
+      max-width: 93.5%;
   }
+}
+.slick-slide img {
+  margin: 0 auto;
+}
+
+
+
+.slick-slide img {
+  max-width: 100%;
+  margin: 0 auto;
+  transition: transform 0.5s ease-in-out; /* Optional: for smoother transitions */
+}
+
+
+.services-content-custom h1{
+    font-size: 40px;
+    padding: 5px;
+    font-weight: 500;
+    background-color: var(--green);
+    line-height: 51.04px;
+    border-radius: 10px;
+}
+
+.services-content-custom p{
+font-size: 18px;
+width: 100%;
+    max-width: 43%;
+font-weight: 400;
+line-height: 22.97px;
+}
+.services-card-content{
+  background-color: var(--green);
+}
+.services-card-content:nth-child(1) , .services-card-content:nth-child(4){
+  background-color: var(--gray);
+}
+.services-card-content:nth-child(3) , .services-card-content:nth-child(6){
+  background-color: var(--darkblue);
+}
+.services-card-content h3{
+width: 100%;
+    background: white;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 8px;
+    line-height: 38.28px;
+    max-width: 80%;
+    border-radius: 6px;
+}
+.services-card-content:nth-child(1) h3 {
+  background-color: var(--green);
+}
+.services-card-content:nth-child(4) h3 {
+  background-color: var(--green);
+}
+.services-card-content:nth-child(6) h3 {
+  background-color: var(--green);
 }

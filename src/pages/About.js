@@ -1,6 +1,7 @@
 import React from "react";
 import herosectionimg from "./../assets/image/herosectionimg.png";
-// import Marquee from "../component/Marquee";
+import Marquee from "../component/Marquee";
+import Services from "./Services";
 
 function About() {
   return (
@@ -33,7 +34,6 @@ function About() {
             </main>
           </div>
 
-          {/* Image Element */}
           <div className="flex items-center justify-center">
             <img
               src={herosectionimg}
@@ -44,7 +44,8 @@ function About() {
         </div>
       </div>
 
-      {/* <Marquee/> */}
+      <Marquee />
+      <Services/>
     </>
   );
 }
