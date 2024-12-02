@@ -2,13 +2,16 @@ import React from "react";
 import herosectionimg from "./../assets/image/herosectionimg.png";
 import Marquee from "../component/Marquee";
 import Services from "./Services";
+import Proposalbox from "../component/Proposalbox";
+import CaseStudies from "../component/CaseStudies";
+import WorkinProcess from "../component/WorkinProcess";
+import Team from "../component/Team";
 
 function About() {
   return (
     <>
       <div className="bg-red-900 about-parent-custom">
         <div className="grid grid-flow-col grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 gap-4">
-          {/* Text Content */}
           <div className="flex items-center justify-center">
             <main className="max-w-screen-xl px-4 lg:px-16">
               <div className="text-left">
@@ -21,13 +24,14 @@ function About() {
                   media marketing, and content creation.
                 </p>
                 <div className="mt-5 sm:mt-8 sm:flex justify-start">
-                  <div className="rounded-md shadow">
-                    <a
-                      href="#"
-                      className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10"
-                    >
-                      Book a consultation
-                    </a>
+                  <div className="proposal-button-custom w-full">
+                    <header class="header">
+                      <div class="banner">
+                        <a href="#" class="butn butn__new">
+                          <span>Book a Consultation</span>
+                        </a>
+                      </div>
+                    </header>
                   </div>
                 </div>
               </div>
@@ -45,7 +49,11 @@ function About() {
       </div>
 
       <Marquee />
-      <Services/>
+      <Services />
+      <Proposalbox />
+      <CaseStudies />
+      <WorkinProcess />
+      <Team/>
     </>
   );
 }
