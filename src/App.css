@@ -65,7 +65,7 @@
 
 
 
-  .proposal-box-custom , .case-studies-custom ,.services_parent_custom , .slick-slider-container , .testimonial-custom , .team-custom{
+  .proposal-box-custom , .case-studies-custom ,.services_parent_custom , .slick-slider-container , .testimonial-custom , .team-custom , .testimonial-custom-box{ 
   width: 100%;
   max-width: 90.5%;
   margin: 30px auto;
@@ -74,7 +74,7 @@
   gap: 30px;
 }
 @media (min-width:1370px){
-  .slick-slider-container , .case-studies-custom , .services_parent_custom , .proposal-box-custom , .testimonial-custom , .team-custom{
+  .slick-slider-container , .case-studies-custom , .services_parent_custom , .proposal-box-custom , .testimonial-custom , .team-custom .testimonial-custom-box{
       max-width: 93.5%;
   }
 }
@@ -219,4 +219,100 @@ margin: 20px 0px;
 }
 .butn span {
   z-index: 20;
+}
+
+/* Container Styles */
+.testimonial-container {
+  background-color: #121212;
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 80%;
+  text-align: center;
+}
+
+/* Header Styles */
+.testimonial-header h1 {
+  font-size: 2rem;
+  color: #4caf50;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-header p {
+  color: #bbb;
+  font-size: 1rem;
+}
+
+/* Slide Styles */
+.testimonial-slide {
+  display: flex;
+  width: 95% !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-box {
+  background-color: #1e1e1e;
+  border: 1px solid #4caf50;
+  padding: 1.5rem;
+  border-radius: 10px;
+  position: relative;
+  text-align: center;
+}
+
+.testimonial-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+/* Decorative Arrow */
+.testimonial-arrow {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 20px;
+  height: 20px;
+  background-color: #1e1e1e;
+  border-left: 1px solid #4caf50;
+  border-bottom: 1px solid #4caf50;
+}
+
+/* Author Styles */
+.testimonial-author h4 {
+  color: #4caf50;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.testimonial-author p {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* Arrow Buttons */
+.custom-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+}
+
+.custom-arrow:hover {
+  background-color: #388e3c;
+}
+
+.custom-next {
+  right: 10px;
+}
+
+.custom-prev {
+  left: 10px;
 }

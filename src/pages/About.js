@@ -6,6 +6,7 @@ import Proposalbox from "../component/Proposalbox";
 import CaseStudies from "../component/CaseStudies";
 import WorkinProcess from "../component/WorkinProcess";
 import Team from "../component/Team";
+import Testimoinal from "../component/Testimoinal";
 
 function About() {
   return (
@@ -53,7 +54,8 @@ function About() {
       <Proposalbox />
       <CaseStudies />
       <WorkinProcess />
-      <Team/>
+      <Team />
+      <Testimoinal/>
     </>
   );
 }
