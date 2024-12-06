@@ -1,3 +1,7 @@
+body{
+      overflow-x: hidden;
+}
+
 :root {
   --color-text: navy;
   --color-bg: papayawhip;
@@ -65,7 +69,7 @@
 
 
 
-  .proposal-box-custom , .case-studies-custom ,.services_parent_custom , .slick-slider-container , .testimonial-custom , .team-custom , .testimonial-custom-box{ 
+  .proposal-box-custom , .case-studies-custom ,.services_parent_custom , .slick-slider-container , .testimonial-custom , .team-custom , .testimonial-custom-box , .contact-custom-page{ 
   width: 100%;
   max-width: 90.5%;
   margin: 30px auto;
@@ -73,10 +77,17 @@
 .services-content-custom{
   gap: 30px;
 }
-@media (min-width:1370px){
-  .slick-slider-container , .case-studies-custom , .services_parent_custom , .proposal-box-custom , .testimonial-custom , .team-custom .testimonial-custom-box{
+@media (min-width:1360px){
+  .slick-slider-container , .case-studies-custom , .services_parent_custom , .proposal-box-custom , .team-custom{
       max-width: 93.5%;
   }
+}
+@media (min-width:1350px){
+  .testimonial-custom-box , .contact-custom-page ,  .testimonial-custom{
+          max-width: 93.5%;
+
+  }
+
 }
 .slick-slide img {
   margin: 0 auto;
@@ -227,8 +238,9 @@ margin: 20px 0px;
   color: white;
   padding: 2rem;
   border-radius: 10px;
+  width: 100%;
   margin: 2rem auto;
-  max-width: 80%;
+    max-width: 93.5%;
   text-align: center;
 }
 
@@ -315,4 +327,69 @@ margin: 20px 0px;
 
 .custom-prev {
   left: 10px;
+}
+
+
+.contact-form-parent img{
+    margin-right: -257px !important;
+        right: 0;
+}
+@media (max-width :991px){
+  .contact-form-parent{
+    display: none !important;
+  }
+  .contact-form-container{
+    width: 100% !important;
+  }
+}
+/* Hide default radio buttons */
+input[type="radio"].custom-radio {
+  display: none;
+}
+
+/* Custom radio button styling */
+input[type="radio"].custom-radio + label span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc; /* Default border color */
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Custom color for the radio button when selected */
+input[type="radio"].custom-radio:checked + label span {
+  background-color: #4caf50; /* Green color when checked */
+  border-color: #4caf50; /* Border color when checked */
+}
+
+/* Inner circle when selected */
+input[type="radio"].custom-radio:checked + label span::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: white; /* Inner circle color */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Hover effect for custom radio button */
+input[type="radio"].custom-radio + label span:hover {
+  border-color: #009688; /* Color change when hovered */
+}
+
+/* Label styling for radio buttons */
+label.custom-radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
 }

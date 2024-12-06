@@ -7,6 +7,7 @@ import CaseStudies from "../component/CaseStudies";
 import WorkinProcess from "../component/WorkinProcess";
 import Team from "../component/Team";
 import Testimoinal from "../component/Testimoinal";
+import Contact from "../component/Contact";
 
 function About() {
   return (
@@ -55,7 +56,8 @@ function About() {
       <CaseStudies />
       <WorkinProcess />
       <Team />
-      <Testimoinal/>
+      <Testimoinal />
+      <Contact/>
     </>
   );
 }
