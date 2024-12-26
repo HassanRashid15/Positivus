@@ -12,7 +12,7 @@ import Contact from "../component/Contact";
 function About() {
   return (
     <>
-      <div className="bg-red-900 about-parent-custom">
+      <div className=" about-parent-custom">
         <div className="grid grid-flow-col grid-rows-2 sm:grid-rows-1 sm:grid-cols-2 gap-4">
           <div className="flex items-center justify-center">
             <main className="max-w-screen-xl px-4 lg:px-16">
