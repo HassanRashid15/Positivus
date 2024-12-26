@@ -18,7 +18,7 @@ function About() {
             <main className="max-w-screen-xl px-4 lg:px-16">
               <div className="text-left">
                 <h2 className="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
-                  Navigating the digital landscape for success
+                  Navigating the digital landscape for successs
                 </h2>
                 <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                   Our digital marketing agency helps businesses grow and succeed
